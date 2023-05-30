@@ -1,0 +1,24 @@
+@import "reset.css";
+
+/* СТИЛИ ШРИФТОВ */
+
+@font-face {
+    font-family: "Mulish-Italic-VariableFont_wght";
+    src: local ("Mulish-Italic-VariableFont_wght"), url("../fonts/Mulish-Italic-VariableFont_wght.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Mulish-VariableFont_wght";
+    src: url("../fonts/Mulish-VariableFont_wght.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Ramka-Bold";
+    src: url("../fonts/Ramka-Bold.otf") format("otf");
+}
+@font-face {
+    font-family: "Ramka";
+    src: url("../fonts/Ramka.otf") format("otf");
+}
