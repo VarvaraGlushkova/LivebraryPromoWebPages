@@ -3,13 +3,13 @@
 /* СТИЛИ ШРИФТОВ */
 
 @font-face {
-    font-family: "Mulish-Italic-VariableFont_wght";
+    font-family: "Mulish-Italic";
     src: local ("Mulish-Italic-VariableFont_wght"), url("../fonts/Mulish-Italic-VariableFont_wght.ttf") format("truetype");
     font-style: italic;
     font-weight: 400;
 }
 @font-face {
-    font-family: "Mulish-VariableFont_wght";
+    font-family: "Mulish";
     src: url("../fonts/Mulish-VariableFont_wght.ttf") format("truetype");
 }
 
