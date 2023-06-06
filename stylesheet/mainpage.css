@@ -1,6 +1,9 @@
+body {
+    font-size: 16px;
+}
 .topMenu {
-    width: 723px;
-    height: 58px;
+    width: 50vw;
+    height: 4vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -11,7 +14,7 @@ nav > div > a {
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.375em;
     line-height: 58px;
     text-transform: lowercase;
     color: #000000;
@@ -22,4 +25,104 @@ hr {
     margin: 0 auto;
     width: 95vw;
     border: 1px solid #000000;
+}
+
+.welcomeSection {
+    height: 50vw;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.headline {
+    position: absolute;
+    top: 25%;
+    left: 26%;
+
+    width: 687px;
+    height: 342px;
+    z-index: 2;
+    font-family: 'Ramka';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.313em;
+    line-height: 114%;
+    text-align: center;
+    color: #000000;
+}
+
+.lbrary {
+    color: white;
+}
+
+.txtBg {
+    top: 49%;
+    position: absolute;
+    background-color: black;
+    height: 140px;
+    width: 340px;
+    border-radius: 20px;
+    left: 40.5%;
+}
+
+.babaka1 {
+    transform: rotate(-25deg);
+    left: -12%;
+    top: 38%;
+    width: 767px;
+    height: 432px;
+    z-index: 1;
+    position: absolute;
+}
+
+.babaka2 {
+    left: 53%;
+    top: 28%;
+    width: 943px;
+    height: 530px;
+    z-index: 1;
+    position: absolute;
+}
+
+.conf {
+    left: 5%;
+    transform: scale(0.95);
+    position: absolute;
+}
+
+.runLine {
+    position: relative;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    height: 8vw;
+    width: 100vw;
+}
+
+.linetxt {
+    
+    width: 3522px;
+    position: absolute;
+    font-family: 'Ramka';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 79px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    animation: runtxtline 8s infinite linear;
+}
+
+.linetxt::after {
+    content: "узнайте о наших событиях / поучаствуйте в наших экскурсиях / посетите наш магазин / ";
+}
+
+@keyframes runtxtline{
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-50%)
+    }
 }

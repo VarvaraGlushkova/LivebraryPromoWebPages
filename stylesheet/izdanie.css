@@ -1,0 +1,95 @@
+.topMenu {
+    width: 50vw;
+    height: 4vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > div > a {
+    text-decoration: none;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.375em;
+    line-height: 58px;
+    text-transform: lowercase;
+    color: #000000;
+}
+
+hr {
+    opacity: 0.4;
+    margin: 0 auto;
+    width: 95vw;
+    border: 1px solid #000000;
+}
+
+.bookScroll {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 42vw;
+}
+
+.img1 {
+    top: -16%;
+    left: 4%;
+    width: 1328px;
+    position: absolute;
+    
+}
+
+.confRunLine {
+    position: relative;
+    width: 100vw;
+    height: 15vw;
+}
+
+.tconf {
+    left: 2%;
+    position: absolute;
+}
+
+.bconf {
+    left: 5%;
+    position: absolute;
+    top: 80%;
+}
+
+.runLine {
+    top: 45%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    width: 196vw;
+    height: 74px;
+}
+
+.lineTxt {
+    font-family: 'Ramka';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 73px;
+    line-height: 114%;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #000000;
+    animation: runTxtLine 3s infinite linear;
+
+}
+
+.lineTxt::after {
+    content: "livebrary / livebrary /livebrary / livebrary /livebrary / livebrary /livebrary / ";
+}
+
+@keyframes runTxtLine {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-50%)
+    }
+    
+}
