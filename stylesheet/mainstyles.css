@@ -2,7 +2,10 @@
 
 /* СТИЛИ ШРИФТОВ */
 
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans+Caption:wght@700&display=swap');
+
+
+/* @font-face {
     font-family: "Mulish-Italic";
     src: local ("Mulish-Italic-VariableFont_wght"), url("../fonts/Mulish-Italic-VariableFont_wght.ttf") format("truetype");
     font-style: italic;
@@ -11,14 +14,14 @@
 @font-face {
     font-family: "Mulish";
     src: url("../fonts/Mulish-VariableFont_wght.ttf") format("truetype");
-}
+} */
 
 
 @font-face {
     font-family: "Ramka-Bold";
-    src: url("../fonts/Ramka-Bold.otf") format("otf");
+    src: url("/fonts/Ramka-Bold.otf") format("otf");
 }
 @font-face {
     font-family: "Ramka";
-    src: url("../fonts/Ramka.otf") format("otf");
+    src: url("/fonts/Ramka.otf") format("otf");
 }
