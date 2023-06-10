@@ -1,3 +1,4 @@
+/* верхнее меню */
 .topMenu {
     width: 50vw;
     height: 4vw;
@@ -5,17 +6,42 @@
     display: flex;
     justify-content: space-between;
 }
-
+nav {
+    z-index: 3;
+}
 nav > div > a {
+    position: relative;
     text-decoration: none;
     font-family: 'Mulish';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.375em;
     line-height: 58px;
     text-transform: lowercase;
     color: #000000;
 }
+
+a::before {
+    background: black;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+    border-radius: 8px;
+  }
+  
+  a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  span:hover {
+    color: white;
+    transition: 0.6s;
+  }
 
 hr {
     opacity: 0.4;
@@ -23,6 +49,8 @@ hr {
     width: 95vw;
     border: 1px solid #000000;
 }
+
+
 
 .bookScroll {
     position: relative;
@@ -39,7 +67,9 @@ hr {
     
 }
 
+/* бегущая строка */
 .confRunLine {
+    overflow: hidden;
     position: relative;
     width: 100vw;
     height: 15vw;
@@ -53,11 +83,11 @@ hr {
 .bconf {
     left: 5%;
     position: absolute;
-    top: 80%;
+    top: 67%;
 }
 
 .runLine {
-    top: 45%;
+    top: 42.5%;
     position: relative;
     align-items: center;
     display: flex;
@@ -92,4 +122,39 @@ hr {
         transform: translateX(-50%)
     }
     
+}
+
+.info__block {
+    height: 24vw;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+}
+
+.info__txt {
+    padding: 70px 50px 20px 70px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 114%;
+}
+
+.info__img__size {
+    transform: rotate(25deg);
+    height: 378px;
+    width: 713px;
+}
+
+.flex__container {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.flex__image2, .flex__image3, .flex__image4 {
+    margin: 0px 0px 0px 15px;
 }

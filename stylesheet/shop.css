@@ -1,0 +1,276 @@
+/* верхнее меню */
+.topMenu {
+    width: 50vw;
+    height: 4vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+    z-index: 3;
+}
+nav > div > a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.375em;
+    line-height: 58px;
+    text-transform: lowercase;
+    color: #000000;
+}
+
+a::before {
+    background: black;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+    border-radius: 8px;
+  }
+  
+  a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  span:hover {
+    color: white;
+    transition: 0.6s;
+  }
+
+hr {
+    opacity: 0.4;
+    margin: 0 auto;
+    width: 95vw;
+    border: 1px solid #000000;
+}
+
+.flex__container {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* первая карточка */
+.flex__item1 {
+  margin-top: 15px;
+}
+.flex__item__inner2 {
+  position: relative;
+  margin: 10px 0px 10px;
+}
+
+.inner__ramka1 {
+  height: 150px;
+  width: 342px;
+  border: 2px solid black;
+  border-radius: 14px;
+}
+
+.inner__txt {
+  margin: 23px;
+  text-align: center;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 114.02%;
+  text-transform: lowercase;
+  color: #000000;
+}
+
+
+
+/* вторая карточка */
+.flex__item2{
+  margin: 15px 20px 0px;
+}
+
+.inner__ramka2 {
+  height: 150px;
+  width: 520px;
+  border: 2px solid black;
+  border-radius: 14px;
+}
+
+.flex__item__inner4 {
+  position: relative;
+  margin: 10px 0px 10px; 
+}
+
+
+/* третья карточка */
+.flex__item3 {
+  margin-top: 15px;
+}
+
+.inner__ramka3 {
+  height: 150px;
+  width: 344px;
+  border: 2px solid black;
+  border-radius: 14px; 
+}
+
+.flex__item__inner6 {
+  position: relative;
+  margin: 10px 0px 10px;   
+}
+
+/* бегущая строка */
+.confRunLine {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 15vw;
+}
+
+.tconf {
+  left: 2%;
+  position: absolute;
+}
+
+.bconf {
+  left: 5%;
+  position: absolute;
+  top: 67%;
+}
+
+.runLine {
+  top: 42.5%;
+  position: relative;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  width: 196vw;
+  height: 74px;
+}
+
+.lineTxt {
+  font-family: 'Ramka';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 73px;
+  line-height: 114%;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #000000;
+  animation: runTxtLine 3s infinite linear;
+
+}
+
+.lineTxt::after {
+  content: "livebrary / livebrary /livebrary / livebrary /livebrary / livebrary /livebrary / ";
+}
+
+@keyframes runTxtLine {
+  0% {
+      transform: translateX(0)
+  }
+  100% {
+      transform: translateX(-50%)
+  }
+  
+}
+
+/* четвертая карточка */
+
+.flex__item5 {
+  margin-top: 15px;
+}
+
+.inner__ramka4 {
+  width: 287px;
+  height: 151px;
+  border: 2px solid black;
+  border-radius: 14px;
+}
+
+.flex__item__inner8 {
+  position: relative;
+  margin: 10px 0px 10px;
+}
+
+/* пятая карточка */
+
+.flex__item6 {
+  margin: 15px 42px 0px;
+}
+
+.inner__ramka5 {
+  width: 520px;
+  height: 151px;
+  border: 2px solid black;
+  border-radius: 14px; 
+}
+
+.flex__item__inner10 {
+  position: relative;
+  margin: 10px 0px 10px;
+}
+
+
+
+
+/* шестая карточка */
+
+.flex__item7 {
+  margin-top: 15px;
+}
+
+.inner__ramka6 {
+  width: 287px;
+  height: 151px;
+  border: 2px solid black;
+  border-radius: 14px; 
+}
+
+.flex__item__inner12 {
+  position: relative;
+  margin: 10px 0px 10px;
+}
+
+/* седьмая карточка */
+
+.flex__item8 {
+  margin-top: 26px;
+}
+
+.flex__item__inner14 {
+  position: relative;
+  margin: 10px 0px 10px; 
+}
+
+.inner__ramka7 {
+  width: 531px;
+  height: 151px;
+  border: 2px solid black;
+  border-radius: 14px; 
+}
+
+
+/* восьмая карточка */
+
+.flex__item9 {
+  margin: 26px 0px 0px 30px;
+}
+
+.flex__item__inner16 {
+  position: relative;
+  margin: 10px 0px 10px; 
+}
+
+.inner__ramka8 {
+  width: 531px;
+  height: 151px;
+  border: 2px solid black;
+  border-radius: 14px; 
+}
+

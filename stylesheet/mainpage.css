@@ -1,24 +1,52 @@
 body {
     font-size: 16px;
 }
+
+
+/* верхнее меню */
 .topMenu {
     width: 50vw;
     height: 4vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    /* background-color: blue; */
+}
+nav {
+    z-index: 3;
 }
 nav > div > a {
+    position: relative;
     text-decoration: none;
     font-family: 'Mulish';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.375em;
     line-height: 58px;
     text-transform: lowercase;
     color: #000000;
 }
+
+a::before {
+    background: black;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+    border-radius: 8px;
+  }
+  
+  a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  span:hover {
+    color: white;
+    transition: 0.6s;
+  }
 
 hr {
     opacity: 0.4;
@@ -26,6 +54,9 @@ hr {
     width: 95vw;
     border: 1px solid #000000;
 }
+
+
+
 
 .welcomeSection {
     height: 50vw;
@@ -140,7 +171,7 @@ hr {
     position: fixed;
     width: 100%;
     height: 100%;
-    top: 0;
+    /* top: 0; */
     left: 0;
 }
 
@@ -155,9 +186,6 @@ hr {
     
 }
 
-.images-parallax {
-
-}
 
 .images-parallax__item {
     position: absolute;
@@ -179,13 +207,5 @@ hr {
 .images-parallax__conf {
     /* background: url(../images/confetti.svg) top / cover no-repeat; */
     top: 0;
-
-}
-
-.images-parallax__babaka1 {
-
-}
-
-.images-parallax__babaka2 {
 
 }
