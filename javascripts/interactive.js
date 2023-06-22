@@ -49,3 +49,15 @@ window.onload = function () {
 
   }
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("burger").addEventListener("click", function() {
+    document.querySelector("nav").classList.toggle("open")
+  })
+});
+
+
+function alerting () {
+  alert("Вы успешно зарегистрировались на событие! Ждем вас в нашей библиотеке")
+} 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livebrary Izdanie</title>
+    <title>Livebrary Events</title>
 
     <link rel="stylesheet" href="stylesheet/mainstyles.css">
 
@@ -25,15 +25,100 @@
 </head>
 <body>
   <!-- Верхняя плашка меню -->
-  <nav>
-    <div class="topMenu">
-        <a href="izdanie.html" class=""><span>издание</span></a>
-        <a href="shop.html" class=""><span>магазин</span></a>
-        <a href="events.html" class=""><span>события</span></a>
-        <a href="excurtions.html" class=""><span>экскурсии</span></a>
+  <nav class="navigation">
+    <button class="header__burger" id="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+<div class="topMenu">
+    <a href="izdanie.html" class=""><span>издание</span></a>
+    <a href="shop.html" class=""><span>магазин</span></a>
+    <a href="events.html" class=""><span>события</span></a>
+    <a href="excurtions.html" class=""><span>экскурсии</span></a>
+</div>
+<hr>
+</nav>
+
+  <div class="flex__container">
+    <div class="flex__item1">
+      <img class="eventimg1" src="images/eventsimage1.svg" alt="" srcset="">
     </div>
-    <hr>
-  </nav>
+    <div class="flex__item2">
+      <div class="inner__txt1">мастер класс <br> по реставрации</div>
+      <div class="inner__txt2">Этот мастер-класс по реставрации - идеальное место для всех, кто хочет научиться восстанавливать старинную мебель и другие антикварные предметы. В рамках курса вы получите доступ к экспертным знаниям <br> и навыкам, которые применяются профессиональными реставраторами</div>
+      <div class="button">
+        <div class="button__txt"><a href="#form">посетить</a></div>
+      </div>
+    </div>
+
+
+    <div class="flex__item3">
+      <!-- Бегущая строка -->
+      <div class="confRunLine">
+        <img class="tconf" src="images/topconf.svg" alt="">
+
+        <div class="runLine">
+            <p class="lineTxt">livebrary / livebrary /livebrary / livebrary /livebrary / livebrary /livebrary / </p>
+        </div>
+
+        <img class="bconf" src="images/botconf.svg" alt="" srcset="">
+      </div>
+    </div>
+
+
+    <div class="flex__item4">
+      <img class="eventimg2" src="images/eventsimage2.svg" alt="">
+    </div>
+    <div class="flex__item5">
+      <div class="inner__txt1">лекция о людях с овз</div>
+      <div class="inner__txt2">Лекция посвящена людям с ограниченными возможностями зрения (ОВЗ). Рассмотрены проблемы социальной адаптации данной категории граждан и пути их решения. В ходе лекции также подняты вопросы о необходимости создания более доступной среды для людей <br> с ОВЗ, а также о том, как помочь этим людям <br> в получении профессионального образования <br>
+        и трудоустройстве</div>
+      <div class="button">
+        <div class="button__txt"><a href="#form">посетить</a></div>
+      </div>
+    </div>
+
+    <div class="flex__item6">
+      <!-- Бегущая строка -->
+      <div class="confRunLine">
+        <img class="tconf" src="images/topconf.svg" alt="">
+
+        <div class="runLine">
+            <p class="lineTxt">livebrary / livebrary /livebrary / livebrary /livebrary / livebrary /livebrary / </p>
+        </div>
+
+        <img class="bconf" src="images/botconf.svg" alt="" srcset="">
+      </div>
+    </div>
+
+    <div class="flex__item7">
+      <img class="eventimg3" src="images/eventsimage3.svg" alt="" srcset="">
+    </div>
+    <div class="flex__item8">
+      <div class="inner__txt1">добро пожаловать </div>
+      <div class="inner__txt2">На пробный визит в библиотеку могут прийти как новички, так и старожилы, желающие освежить свои знания о соответствующих процедурах. <br> В ходе визита, библиотекарь проводит тур по помещениям библиотеки, ознакамливая гостей <br> с местами на полках книг, каталогами, мультимедийными ресурсами, с информационными табличками и другими элементами медиаобстановки, которые предназначены для поиска нужных сведений</div>
+      <div class="button">
+        <div class="button__txt"><a href="#form">посетить</a></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="form__main">
+    <div id="form" class="flex__container form">
+      <div class="form__headline">Заинтересовали наши события?</div>
+      <div class="form__headline">регистрируйтесь ниже</div>
+      <input type="email" name value placeholder="emailexample@gmail.com">
+      <input type="text" name value placeholder="Имя Фамилия">
+      <input type="tel" name value placeholder="Номер телефона">
+      <input onclick="alerting()" class="register__btn" type="button" value="зарегестрироваться">
+    </div>
+    <img class="formdecor" src="images/formdecorations.svg" alt="" srcset="">
+  </div>
+  
+
+  
     
 </body>
 </html>

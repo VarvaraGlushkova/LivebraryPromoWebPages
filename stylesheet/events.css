@@ -1,51 +1,202 @@
-/* верхнее меню */
-.topMenu {
-    width: 50vw;
-    height: 4vw;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-nav {
-    z-index: 3;
-}
-nav > div > a {
-    position: relative;
-    text-decoration: none;
-    font-family: 'Mulish';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.375em;
-    line-height: 58px;
-    text-transform: lowercase;
-    color: #000000;
-}
 
-a::before {
-    background: black;
-    content: "";
-    inset: 0;
-    position: absolute;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.5s ease-in-out;
-    z-index: -1;
-    border-radius: 8px;
-  }
-  
-  a:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
-  }
-  
-  span:hover {
-    color: white;
-    transition: 0.6s;
-  }
 
 hr {
     opacity: 0.4;
     margin: 0 auto;
     width: 95vw;
     border: 1px solid #000000;
+}
+
+.flex__container {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.flex__item1 {
+  margin: 20px 0px 0px 0px;
+}
+
+.flex__item2, .flex__item5, .flex__item8 {
+  margin: 20px 0px 0px 24px;
+  position: relative;
+  border: 2px solid black;
+  border-radius: 13px;
+  width: 494px;
+  height: 462px;
+}
+
+.inner__txt1 {
+  margin: 20px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 114%;
+  text-transform: lowercase;
+  color: #000000;
+}
+
+.inner__txt2 {
+  margin: 20px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 114%;
+
+  text-transform: lowercase;
+
+  color: #000000;
+
+}
+
+.button__txt {
+  margin: 10px 40px 10px 40px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 114%;
+  text-transform: lowercase;
+  color: #FFFFFF;
+}
+
+.button__txt > a {
+  text-decoration: none;
+  color: white;
+}
+
+.button {
+  left: 50%;
+  top: 80%;
+  position: absolute;
+  height: 50px;
+  width: 186px;
+  border-radius: 17px;
+  background: #000000;
+}
+
+/* бегущая строка */
+.confRunLine {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 15vw;
+}
+
+.tconf {
+  left: 2%;
+  position: absolute;
+}
+
+.bconf {
+  left: 5%;
+  position: absolute;
+  top: 67%;
+}
+
+.runLine {
+  top: 42.5%;
+  position: relative;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  width: 196vw;
+  height: 74px;
+}
+
+.lineTxt {
+  font-family: 'Ramka';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 73px;
+  line-height: 114%;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #000000;
+  animation: runTxtLine 3s infinite linear;
+
+}
+
+.lineTxt::after {
+  content: "livebrary / livebrary /livebrary / livebrary /livebrary / livebrary /livebrary / ";
+}
+
+@keyframes runTxtLine {
+  0% {
+      transform: translateX(0)
+  }
+  100% {
+      transform: translateX(-50%)
+  }
+  
+}
+
+.flex__item4, .flex__item7 {
+  margin: 20px 0px 0px 0px;
+}
+
+.form__main {
+  position: relative;
+  height: 44vw;
+  margin: 40px;
+}
+
+.form__headline {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38.7176px;
+  line-height: 114.02%;
+
+
+  text-transform: lowercase;
+
+  color: #000000;
+}
+
+.flex__container.form {
+  width: 52vw;
+}
+
+input[type='text'], input[type='email'], input[type='tel'] {
+  height: 4vw;
+  width: 41vw;
+  border: 2px solid black;
+  border-radius: 14px;
+  font-size: 20px;
+  appearance: none;
+  padding: 0 12px;
+  margin: 14px;
+}
+
+input[type='button'] {
+  appearance: none;
+  background-color: black;
+  color: white;
+  height: 4vw;
+  width: 21vw;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 114.02%;
+  border-radius: 20px;
+}
+
+
+
+.form__headline:nth-child(2) {
+  margin-bottom: 40px;
+}
+
+.formdecor {
+  left: -3%;
+  top: 14%;
+  position: absolute;
+  z-index: -1;
 }

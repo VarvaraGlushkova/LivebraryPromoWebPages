@@ -17,12 +17,154 @@
 }
 
 
-/* @font-face {
-    font-family: "Ramka-Bold";
-    src: url("/fonts/Ramka-Bold.otf") format("otf");
-} */
-
 @font-face {
     font-family: "Ramka";
     src: url("../fonts/Ramka.woff") format("woff");
 }
+
+
+/* верхнее меню */
+
+.header__burger {
+    z-index: 6;
+    display: none;
+    position: relative;
+    height: 70px;
+    width: 80px;
+    border: none;
+    background-color: transparent;
+}
+
+.header__burger div {
+    position: absolute;
+    height: 6px;
+    width: 55px;
+    left: 15px;
+    background-color: black;
+    border-radius: 2px;
+    transition: transform .5s, opacity .5s;
+}
+
+.header__burger div:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+.header__burger div:nth-child(3) {
+    transform: translateY(10px);
+}
+
+.navigation.open .header__burger div:nth-child(2) {
+    opacity: 0;
+}
+
+.navigation.open .header__burger div:nth-child(1) {
+    transform: translateY(0) rotate(-45deg);
+}
+.navigation.open .header__burger div:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+}
+
+
+
+.topMenu {
+    width: 50vw;
+    height: 4vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+    z-index: 3;
+}
+nav > div > a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.375em;
+
+
+    line-height: 24px;
+    height: 24px;
+    padding: 5px;
+    margin-top: 10px;
+
+    
+    text-transform: lowercase;
+    color: #000000;
+}
+
+a::before {
+    background: black;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+    border-radius: 8px;
+  }
+  
+  a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  span:hover {
+    color: white;
+    transition: 0.6s;
+  }
+
+hr {
+    opacity: 0.4;
+    margin: 0 auto;
+    width: 95vw;
+    border: 1px solid #000000;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header__burger {
+        display: block;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .topMenu {
+        width: 232px;
+        height: 315px;
+        position: absolute;
+        top: 0;
+        left: -235px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        display: block;
+        z-index: 5;
+        transition: transform .5s;
+    }
+
+    .topMenu > a {
+        font-size: 30px;
+        display: block;
+    }
+
+    nav > div > a {
+        margin-top: 16px;
+        margin-left: 20px;
+    }
+
+    .topMenu > a:nth-child(1) {
+        margin-top: 90px;
+    }
+
+    .navigation.open .topMenu {
+        transform: translateX(100%);
+    }
+    
+}
+

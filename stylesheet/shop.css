@@ -1,47 +1,3 @@
-/* верхнее меню */
-.topMenu {
-    width: 50vw;
-    height: 4vw;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-nav {
-    z-index: 3;
-}
-nav > div > a {
-    position: relative;
-    text-decoration: none;
-    font-family: 'Mulish';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.375em;
-    line-height: 58px;
-    text-transform: lowercase;
-    color: #000000;
-}
-
-a::before {
-    background: black;
-    content: "";
-    inset: 0;
-    position: absolute;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.5s ease-in-out;
-    z-index: -1;
-    border-radius: 8px;
-  }
-  
-  a:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
-  }
-  
-  span:hover {
-    color: white;
-    transition: 0.6s;
-  }
 
 hr {
     opacity: 0.4;
@@ -56,6 +12,10 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
+}
+
+.flex__item3__mob {
+  display: none;
 }
 
 /* первая карточка */
@@ -153,6 +113,8 @@ hr {
 }
 
 .lineTxt {
+  cursor: pointer;
+  text-decoration: none;
   font-family: 'Ramka';
   font-style: normal;
   font-weight: 400;
@@ -272,5 +234,1104 @@ hr {
   height: 151px;
   border: 2px solid black;
   border-radius: 14px; 
+}
+
+@media only screen and (min-width: 1729px) and (max-width: 1920px) {
+  .topMenu {
+    height: 3vw;
+  }
+
+  .shopitem1__inner {
+    width: 476px;
+    height: 505px;
+  }
+
+  .inner__ramka1 {
+    width: 476px;
+    height: 208px;
+    border: 2px solid #000000;
+    border-radius: 19px;
+  }
+
+  .inner__txt {
+    font-size: 46px;
+  }
+
+  .shopitem2__inner {
+    width: 721px;
+    height: 502px;
+  }
+
+  .inner__ramka2 {
+    width: 721px;
+    height: 208px;  
+    border: 2px solid #000000;
+    border-radius: 19px;    
+
+  }
+
+  .shopitem3__inner {
+    width: 478px;
+    height: 505px;
+  }
+
+  .inner__ramka3 {
+    width: 478px;
+    height: 208px;
+    border: 2px solid #000000;
+    border-radius: 19px;
+  }
+
+  .tconf {
+    transform: scale(1.4);
+    left: 10%;
+    position: absolute;
+  }
+
+  .runLine {
+    top: 40%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    width: 196vw;
+    height: 94px;
+  }
+
+  .lineTxt {
+    font-size: 95px;
+    margin: 33px;
+  }
+
+  .bconf {
+    transform: scale(1.4);
+    left: 17%;
+    position: absolute;
+    top: 69%;
+  }
+
+  .shopitem4__inner {
+    width: 398px;
+    height: 501px;
+  }
+
+  .inner__ramka4 {
+    width: 398px;
+    height: 209px;
+    border: 2px solid #000000;
+    border-radius: 19px;
+
+  }
+
+  .shopitem5__inner {
+    width: 721px;
+    height: 502px;
+
+  }
+
+  .inner__ramka5 {
+    width: 721px;
+    height: 209px;
+    border: 2px solid #000000;
+    border-radius: 19px;
+  }
+
+  .shopitem7__inner {
+    width: 398px;
+    height: 501px;
+  }
+
+  .inner__ramka6 {
+    width: 398px;
+    height: 209px;
+    border: 2px solid #000000;
+    border-radius: 19px;
+  }
+
+  .shopitem8__inner {
+    width: 738px;
+    height: 460px;
+  }
+
+  .inner__ramka7 {
+    width: 738px;
+    height: 209px;
+    border: 2px solid #000000;
+    border-radius: 19px;    
+  }
+
+  .shopitem9__inner {
+    width: 743px;
+    height: 460px;
+  }
+
+  .inner__ramka8 {
+    width: 743px;
+    height: 209px;
+    border: 2px solid #000000;
+    border-radius: 19px;    
+  }
+
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1728px) {
+   
+  .topMenu {
+    height: 3vw;
+  }
+
+  .tconf {
+        transform: scale(1.2);
+        left: 10%;
+        position: absolute;
+    }
+
+    .runLine {
+        top: 40%;
+        position: relative;
+        align-items: center;
+        display: flex;
+        overflow: hidden;
+        width: 196vw;
+        height: 94px;
+    }
+
+    .lineTxt {
+        font-size: 85px;
+    }
+
+    .bconf {
+        transform: scale(1.2);
+        left: 12%;
+        position: absolute;
+        top: 69%;
+    }
+
+    .shopitem1__inner {
+      width: 416px;
+      height: 442px;
+    }
+  
+    .inner__ramka1 {
+      width: 416px;
+      height: 182px;
+      border: 2px solid #000000;
+      border-radius: 16px;
+    }
+  
+    .inner__txt {
+      font-size: 40px;
+    }
+  
+    .shopitem2__inner {
+      width: 632px;
+      height: 440.px;
+    }
+  
+    .inner__ramka2 {
+      width: 632px;
+      height: 182px;  
+      border: 2px solid #000000;
+      border-radius: 16px;    
+  
+    }
+  
+    .shopitem3__inner {
+      width: 419px;
+      height: 442px;
+    }
+  
+    .inner__ramka3 {
+      width: 419px;
+      height: 182px;
+      border: 2px solid #000000;
+      border-radius: 16px;
+    }
+
+    .shopitem4__inner {
+      width: 348px;
+      height: 439px;
+    }
+  
+    .inner__ramka4 {
+      width: 348px;
+      height: 182px;
+      border: 2px solid #000000;
+      border-radius: 16px;
+  
+    }
+  
+    .shopitem5__inner {
+      width: 632px;
+      height: 440px;
+    }
+  
+    .inner__ramka5 {
+      width: 632px;
+      height: 182px;
+      border: 2px solid #000000;
+      border-radius: 16px;
+    }
+  
+    .shopitem7__inner {
+      width: 348px;
+      height: 439px;
+    }
+  
+    .inner__ramka6 {
+      width: 348px;
+      height: 182px;
+      border: 2px solid #000000;
+      border-radius: 16px;
+    }
+  
+    .shopitem8__inner {
+      width: 646px;
+      height: 403px;
+    }
+  
+    .inner__ramka7 {
+      width: 646px;
+      height: 182px;
+      border: 2px solid #000000;
+      border-radius: 16px;    
+    }
+  
+    .shopitem9__inner {
+      width: 650px;
+      height: 403px;
+    }
+  
+    .inner__ramka8 {
+      width: 650px;
+      height: 182px;
+      border: 2px solid #000000;
+      border-radius: 16px;    
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 1279px) and (max-width: 1366px) {
+      .lineTxt {
+        font-size: 66px;
+    }
+
+    .runLine {
+        width: 184vw;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .tconf {
+        transform: scale(0.9);
+        left: -4%;
+        position: absolute;
+    }
+
+    .lineTxt {
+        font-size: 62px;
+    }
+
+    .bconf {
+        transform: scale(0.9);
+        left: -2%;
+        position: absolute;
+        top: 67%;
+    }
+
+    .shopitem1__inner {
+      width: 326px;
+      height: 346px;
+    }
+  
+    .inner__ramka1 {
+      width: 326px;
+      height: 143px;
+      border: 1.7px solid #000000;
+      border-radius: 13px;
+    }
+  
+    .inner__txt {
+      font-size: 32px;
+    }
+  
+    .shopitem2__inner {
+      width: 495px;
+      height: 344px;
+    }
+  
+    .inner__ramka2 {
+      width: 495px;
+      height: 143px;  
+      border: 1.7px solid #000000;
+      border-radius: 13px;    
+  
+    }
+  
+    .shopitem3__inner {
+      width: 328px;
+      height: 346px;
+    }
+  
+    .inner__ramka3 {
+      width: 328px;
+      height: 143px;
+      border: 1.7px solid #000000;
+      border-radius: 13px;
+    }
+
+    .confRunLine {
+      overflow: hidden;
+      position: relative;
+      width: 100vw;
+      height: 16vw;
+  }
+  
+
+    .shopitem4__inner {
+      width: 273px;
+      height: 343px;
+    }
+  
+    .inner__ramka4 {
+      width: 273px;
+      height: 143px;
+      border: 1.7px solid #000000;
+      border-radius: 13px;
+  
+    }
+  
+    .shopitem5__inner {
+      width: 495px;
+      height: 344px;   
+    }
+  
+    .inner__ramka5 {
+      width: 495px;
+      height: 143px;
+      border: 1.7px solid #000000;
+      border-radius: 13px;
+    }
+  
+    .shopitem7__inner {
+      width: 273px;
+      height: 343px;
+    }
+  
+    .inner__ramka6 {
+      width: 273px;
+      height: 143px;
+      border: 1.7px solid #000000;
+      border-radius: 13px;
+    }
+  
+    .shopitem8__inner {
+      width: 506px;
+      height: 315px;
+    }
+  
+    .inner__ramka7 {
+      width: 506px;
+      height: 143px;
+      border: 1.7px solid #000000;
+      border-radius: 13px;    
+    }
+  
+    .shopitem9__inner {
+      width: 509px;
+      height: 315px;
+    }
+  
+    .inner__ramka8 {
+      width: 509px;
+      height: 143px;
+      border: 1.7px solid #000000;
+      border-radius: 13px;    
+    }
+
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  
+
+  .topMenu {
+    height: 5vw;
+  }
+
+
+  /* настройки блоков для моб верстки */
+  .flex__item3__mob {
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  .flex__item3 {
+    display: none;
+  }
+
+  .flex__item7__mob {
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+
+  .flex__item7 {
+    display: none;
+  }
+  /* ____________________ */
+
+
+  .tconf {
+    transform: scale(0.8);
+    left: -12%;
+    position: absolute;
+}
+
+.runLine {
+    top: 40%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    width: 226vw;
+    height: 74px;
+}
+
+.confRunLine {
+    height: 17vw;
+}
+
+.lineTxt {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Ramka';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 114%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    animation: runTxtLine 3s infinite linear;
+}
+
+.bconf {
+    transform: scale(0.8);
+    left: -13%;
+    position: absolute;
+    top: 64%;
+}
+
+
+.shopitem1__inner {
+  width: 326px;
+  height: 346px;
+}
+
+.inner__ramka1 {
+  width: 326px;
+  height: 143px;
+  border: 1.7px solid #000000;
+  border-radius: 13px;
+}
+
+.inner__txt {
+  font-size: 32px;
+}
+
+.shopitem2__inner {
+  width: 495px;
+  height: 344px;
+}
+
+.inner__ramka2 {
+  width: 495px;
+  height: 143px;  
+  border: 1.7px solid #000000;
+  border-radius: 13px;    
+
+}
+
+.shopitem3__inner {
+  width: 328px;
+  height: 346px;
+}
+
+.inner__ramka3 {
+  width: 328px;
+  height: 143px;
+  border: 1.7px solid #000000;
+  border-radius: 13px;
+}
+
+.confRunLine {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 16vw;
+}
+
+
+.shopitem4__inner {
+  width: 273px;
+  height: 343px;
+}
+
+.inner__ramka4 {
+  width: 273px;
+  height: 143px;
+  border: 1.7px solid #000000;
+  border-radius: 13px;
+
+}
+
+.shopitem5__inner {
+  width: 495px;
+  height: 344px;   
+}
+
+.inner__ramka5 {
+  width: 495px;
+  height: 143px;
+  border: 1.7px solid #000000;
+  border-radius: 13px;
+}
+
+.shopitem7__inner {
+  width: 273px;
+  height: 343px;
+}
+
+.inner__ramka6 {
+  width: 273px;
+  height: 143px;
+  border: 1.7px solid #000000;
+  border-radius: 13px;
+}
+
+.shopitem8__inner {
+  width: 506px;
+  height: 315px;
+}
+
+.inner__ramka7 {
+  width: 506px;
+  height: 143px;
+  border: 1.7px solid #000000;
+  border-radius: 13px;    
+}
+
+.shopitem9__inner {
+  width: 509px;
+  height: 315px;
+}
+
+.inner__ramka8 {
+  width: 509px;
+  height: 143px;
+  border: 1.7px solid #000000;
+  border-radius: 13px;    
+}
+
+
+
+
+
+}
+
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+   /* настройки блоков для моб верстки */
+   .flex__item3__mob {
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  .flex__item3 {
+    display: none;
+  }
+
+  .flex__item7__mob {
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+
+  .flex__item7 {
+    display: none;
+  }
+  /* ____________________ */
+
+  .runLine {
+    top: 30%;
+    width: 221vw;
+}
+
+.confRunLine {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 22vw;
+}
+
+.tconf {
+    top: -11%;
+    transform: scale(0.8);
+    left: -17%;
+    position: absolute;
+}
+
+.lineTxt {
+    font-size: 44px;
+}
+
+.bconf {
+    transform: scale(0.8);
+    left: -23%;
+    position: absolute;
+    top: 55%;
+}
+
+
+
+
+.shopitem1__inner {
+  width: 301px;
+  height: 320px;
+}
+
+.inner__ramka1 {
+  width: 301px;
+  height: 132px;
+  border: 1.7px solid #000000;
+  border-radius: 12px;
+}
+
+.inner__txt {
+  font-size: 29px;
+}
+
+.shopitem2__inner {
+  width: 457px;
+  height: 318px;
+}
+
+.inner__ramka2 {
+  width: 457px;
+  height: 132px;  
+  border: 1.7px solid #000000;
+  border-radius: 12px;    
+
+}
+
+.shopitem3__inner {
+  width: 303px;
+  height: 320px;
+}
+
+.inner__ramka3 {
+  width: 303px;
+  height: 132px;
+  border: 1.7px solid #000000;
+  border-radius: 12px;
+}
+
+.confRunLine {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 19vw;
+}
+
+
+.shopitem4__inner {
+  width: 273px;
+  height: 343px;
+}
+
+.inner__ramka4 {
+  width: 273px;
+  height: 132px;
+  border: 1.7px solid #000000;
+  border-radius: 12px;
+
+}
+
+.shopitem5__inner {
+  width: 495px;
+  height: 344px;   
+}
+
+.inner__ramka5 {
+  width: 495px;
+  height: 132px;
+  border: 1.7px solid #000000;
+  border-radius: 12px;
+}
+
+.shopitem7__inner {
+  width: 273px;
+  height: 343px;
+}
+
+.inner__ramka6 {
+  width: 273px;
+  height: 143px;
+  border: 1.7px solid #000000;
+  border-radius: 13px;
+}
+
+.shopitem8__inner {
+  width: 506px;
+  height: 315px;
+}
+
+.inner__ramka7 {
+  width: 506px;
+  height: 143px;
+  border: 1.7px solid #000000;
+  border-radius: 13px;    
+}
+
+.shopitem9__inner {
+  width: 509px;
+  height: 315px;
+}
+
+.inner__ramka8 {
+  width: 509px;
+  height: 143px;
+  border: 1.7px solid #000000;
+  border-radius: 13px;    
+}
+
+.flex__item9 {
+  margin: 26px 0px 0px 0px;
+}
+
+}
+
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+  .shopitem1__inner {
+    width: 296px;
+    height: 314px;
+  }
+  
+  .inner__ramka1 {
+    width: 296px;
+    height: 129px;
+    border: 1.7px solid #000000;
+    border-radius: 12px;
+  }
+  
+  .inner__txt {
+    font-size: 29px;
+  }
+  
+  .shopitem2__inner {
+    width: 362px;
+    height: 252px;
+  }
+  
+  .inner__ramka2 {
+    width: 362px;
+    height: 129px;  
+    border: 1.7px solid #000000;
+    border-radius: 12px;    
+  
+  }
+
+  .flex__item3 {
+    margin-bottom: 20px;
+  }
+  
+  .shopitem3__inner {
+    width: 303px;
+    height: 320px;
+  }
+  
+  .inner__ramka3 {
+    width: 303px;
+    height: 129px;
+    border: 1.7px solid #000000;
+    border-radius: 12px;
+  }
+  
+  .confRunLine {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 19vw;
+  }
+
+  .confRunLine {
+    top: -10%;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 37vw;
+}
+
+.tconf {
+    top: -18%;
+    transform: scale(0.7);
+    left: -100%;
+    position: absolute;
+}
+
+.runLine {
+    top: 33%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    width: 371vw;
+    height: 40px;
+}
+
+.lineTxt {
+    font-size: 40px;
+}
+
+.bconf {
+    transform: scale(0.7);
+    left: -120%;
+    position: absolute;
+    top: 48%;
+}
+  
+  
+  .shopitem4__inner {
+    width: 273px;
+    height: 343px;
+  }
+  
+  .inner__ramka4 {
+    width: 273px;
+    height: 129px;
+    border: 1.7px solid #000000;
+    border-radius: 12px;
+  
+  }
+  
+  .shopitem5__inner {
+    width: 352px;
+    height: 245px;
+  }
+  
+  .inner__ramka5 {
+    width: 352px;
+    height: 129px;
+    border: 1.7px solid #000000;
+    border-radius: 12px;
+  }
+
+  .flex__item7__mob {
+    display: none;
+  }
+  
+  .shopitem7__inner {
+    width: 260px;
+    height: 327px;
+  }
+  
+  .inner__ramka6 {
+    width: 260px;
+    height: 129px;
+    border: 1.7px solid #000000;
+    border-radius: 12px;
+  }
+  
+  .shopitem8__inner {
+    width: 367px;
+    height: 229px;
+  }
+  
+  .inner__ramka7 {
+    width: 367px;
+    height: 129px;
+    border: 1.7px solid #000000;
+    border-radius: 12px;    
+  }
+  
+  .shopitem9__inner {
+    width: 379px;
+    height: 234px;
+  }
+  
+  .inner__ramka8 {
+    width: 379px;
+    height: 129px;
+    border: 1.7px solid #000000;
+    border-radius: 12px;    
+  }
+  
+  .flex__item9 {
+    margin: 26px 0px 20px 0px;
+}
+
+}
+
+@media only screen and (max-width: 375px) {
+
+  .confRunLine {
+    top: -10%;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 37vw;
+}
+
+.tconf {
+    top: -18%;
+    transform: scale(0.6);
+    left: -100%;
+    position: absolute;
+}
+
+.runLine {
+    top: 33%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    width: 371vw;
+    height: 40px;
+}
+
+.lineTxt {
+    font-size: 35px;
+}
+
+.bconf {
+    transform: scale(0.6);
+    left: -130%;
+    position: absolute;
+    top: 45%;
+}
+
+.shopitem1__inner {
+  width: 254px;
+  height: 269px;
+}
+
+.inner__ramka1 {
+  width: 254px;
+  height: 111px;
+  border: 1.7px solid #000000;
+  border-radius: 12px;
+}
+
+.inner__txt {
+  font-size: 24px;
+}
+
+.shopitem2__inner {
+  width: 311px;
+  height: 216px;
+}
+
+.inner__ramka2 {
+  width: 311px;
+  height: 111px;  
+  border: 1.7px solid #000000;
+  border-radius: 12px;    
+
+}
+
+.flex__item3 {
+  margin-bottom: 20px;
+}
+
+.shopitem3__inner {
+  width: 260px;
+  height: 275px;
+}
+
+.inner__ramka3 {
+  width: 260px;
+  height: 111px;
+  border: 1.7px solid #000000;
+  border-radius: 12px;
+}
+
+.shopitem4__inner {
+  width: 236px;
+  height: 297px;
+}
+
+.inner__ramka4 {
+  width: 236px;
+  height: 111px;
+  border: 1.7px solid #000000;
+  border-radius: 12px;
+
+}
+
+.shopitem5__inner {
+  width: 303px;
+  height: 210px;
+}
+
+.inner__ramka5 {
+  width: 303px;
+  height: 111px;
+  border: 1.7px solid #000000;
+  border-radius: 12px;
+}
+
+.flex__item7__mob {
+  display: none;
+}
+
+.shopitem7__inner {
+  width: 223px;
+  height: 281px;
+}
+
+.inner__ramka6 {
+  width: 223px;
+  height: 111px;
+  border: 1.7px solid #000000;
+  border-radius: 12px;
+}
+
+.shopitem8__inner {
+  width: 315px;
+  height: 196px;
+}
+
+.inner__ramka7 {
+  width: 315px;
+  height: 111px;
+  border: 1.7px solid #000000;
+  border-radius: 12px;    
+}
+
+.shopitem9__inner {
+  width: 325px;
+  height: 201px;
+}
+
+.inner__ramka8 {
+  width: 325px;
+  height: 111px;
+  border: 1.7px solid #000000;
+  border-radius: 12px;    
+}
+
+.flex__item9 {
+  margin: 26px 0px 20px 0px;
+}
+
+
+
+
+
+    
 }
 
