@@ -1,51 +1,372 @@
-/* верхнее меню */
-.topMenu {
-    width: 50vw;
-    height: 4vw;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+
+
+
+
+.flex__container {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
 }
-nav {
-    z-index: 3;
+
+/* бегущая строка */
+.confRunLine {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 15vw;
 }
-nav > div > a {
+
+.tconf {
+  left: 2%;
+  position: absolute;
+}
+
+.bconf {
+  left: 5%;
+  position: absolute;
+  top: 67%;
+}
+
+.runLine {
+  top: 42.5%;
+  position: relative;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  width: 196vw;
+  height: 74px;
+}
+
+.lineTxt {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Ramka';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 73px;
+  line-height: 114%;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #000000;
+  animation: runTxtLine 3s infinite linear;
+
+}
+
+.lineTxt::after {
+  content: "livebrary / livebrary /livebrary / livebrary /livebrary / livebrary /livebrary / ";
+}
+
+@keyframes runTxtLine {
+  0% {
+      transform: translateX(0)
+  }
+  100% {
+      transform: translateX(-50%)
+  }
+  
+}
+
+
+.flex__item1 {
+  margin: 20px 0px 0px 0px;
+}
+
+.flex__item2, .flex__item5, .flex__item8 {
+  margin: 20px 0px 0px 24px;
+  position: relative;
+  border: 2px solid black;
+  border-radius: 13px;
+  width: 494px;
+  height: 427px;
+}
+
+.inner__txt1 {
+  margin: 20px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 114%;
+  text-transform: lowercase;
+  color: #000000;
+}
+
+.inner__txt2 {
+  margin: 20px 40px 20px 18px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 114%;
+
+  text-transform: lowercase;
+
+  color: #000000;
+
+}
+
+.button__txt {
+  margin: 10px 40px 10px 40px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 114%;
+  text-transform: lowercase;
+  color: #FFFFFF;
+}
+
+.button__txt > a {
+  text-decoration: none;
+  color: white;
+}
+
+.button {
+  left: 50%;
+  top: 80%;
+  position: absolute;
+  height: 50px;
+  width: 186px;
+  border-radius: 17px;
+  background: #000000;
+}
+
+.flex__item4 {
+  margin-top: 20px;
+}
+
+
+@media only screen and (min-width: 1729px) and (max-width: 1920px) {
+
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1728px) {
+
+}
+
+@media only screen and (min-width: 1279px) and (max-width: 1366px) {
+  .lineTxt {
+    font-size: 66px;
+}
+
+.runLine {
+    width: 184vw;
+}
+
+.flex__item2, .flex__item5, .flex__item8 {
+  margin: 20px 0px 0px 0px;
+  position: relative;
+  border: 2px solid black;
+  border-radius: 13px;
+  width: 887px;
+  height: 281px;
+}
+
+.button {
+  left: 73%;
+  top: 72%;
+  position: absolute;
+  height: 50px;
+  width: 186px;
+  border-radius: 17px;
+  background: #000000;
+}
+
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .tconf {
+    transform: scale(0.9);
+    left: -4%;
+    position: absolute;
+}
+
+.lineTxt {
+    font-size: 62px;
+}
+
+.bconf {
+    transform: scale(0.9);
+    left: -2%;
+    position: absolute;
+    top: 67%;
+}
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  
+  .topMenu {
+    height: 7vw;
+  }
+  .tconf {
+    transform: scale(0.8);
+    left: -12%;
+    position: absolute;
+}
+
+.runLine {
+    top: 40%;
     position: relative;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    width: 226vw;
+    height: 74px;
+}
+
+.confRunLine {
+    height: 17vw;
+}
+
+.lineTxt {
+    cursor: pointer;
     text-decoration: none;
+    font-family: 'Ramka';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 114%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    animation: runTxtLine 3s infinite linear;
+}
+
+.bconf {
+    transform: scale(0.8);
+    left: -13%;
+    position: absolute;
+    top: 64%;
+}
+
+.flex__item2, .flex__item5, .flex__item8 {
+  margin: 20px 0px 0px 0px;
+  position: relative;
+  border: 2px solid black;
+  border-radius: 13px;
+  width: 897px;
+  height: 256px;
+}
+
+.button {
+  left: 75%;
+  top: 75%;
+  position: absolute;
+  height: 50px;
+  width: 186px;
+  border-radius: 17px;
+  background: #000000;
+}
+
+
+}
+
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+  .runLine {
+    top: 30%;
+    width: 221vw;
+}
+
+.confRunLine {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 22vw;
+}
+
+.tconf {
+    top: -11%;
+    transform: scale(0.8);
+    left: -17%;
+    position: absolute;
+}
+
+.lineTxt {
+    font-size: 44px;
+}
+
+.bconf {
+    transform: scale(0.8);
+    left: -23%;
+    position: absolute;
+    top: 55%;
+}
+
+.eventimg1 {
+  width: 637.11px;
+  height: 379.4px;
+}
+
+.eventimg2 {
+  width: 637px;
+  height: 379px;
+}
+
+.flex__item2, .flex__item5, .flex__item8 {
+  margin: -20px 0px 0px 0px;
+  position: relative;
+  border: 2px solid black;
+  border-radius: 13px;
+  width: 625px;
+  height: 182px;
+}
+
+.inner__txt1 {
+    margin: 20px;
     font-family: 'Mulish';
     font-style: normal;
-    font-weight: 600;
-    font-size: 1.375em;
-    line-height: 58px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 114%;
     text-transform: lowercase;
     color: #000000;
 }
 
-a::before {
-    background: black;
-    content: "";
-    inset: 0;
-    position: absolute;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.5s ease-in-out;
-    z-index: -1;
-    border-radius: 8px;
-  }
-  
-  a:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
-  }
-  
-  span:hover {
-    color: white;
-    transition: 0.6s;
-  }
+.inner__txt2 {
+  margin: 20px 40px 20px 18px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 114%;
+  text-transform: lowercase;
+  color: #000000;
+}
 
-hr {
-    opacity: 0.4;
-    margin: 0 auto;
-    width: 95vw;
-    border: 1px solid #000000;
+.button {
+  left: 65%;
+  top: 75%;
+  position: absolute;
+  width: 186px;
+  height: 31px;
+  background: #000000;
+  border-radius: 10.9px;
+}
+
+.button__txt {
+  margin: 2px 40px 10px 48px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 114%;
+  text-transform: lowercase;
+  color: #FFFFFF;
+}
+
+
+
+}
+
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+
+}
+
+@media only screen and (max-width: 375px) {
+    
 }

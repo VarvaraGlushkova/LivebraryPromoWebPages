@@ -7,6 +7,10 @@ hr {
     border: 1px solid #000000;
 }
 
+.formdecorMOB {
+  display: none;
+}
+
 .flex__container {
   display: flex;
   width: 100vw;
@@ -199,4 +203,867 @@ input[type='button'] {
   top: 14%;
   position: absolute;
   z-index: -1;
+}
+
+
+@media only screen and (min-width: 1729px) and (max-width: 1920px) {
+
+  .topMenu {
+    height: 3vw;
+  }
+ 
+ 
+  .tconf {
+    transform: scale(1.4);
+    left: 10%;
+    position: absolute;
+}
+
+.runLine {
+    top: 40%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    width: 196vw;
+    height: 94px;
+}
+
+.lineTxt {
+    font-size: 95px;
+}
+
+.bconf {
+    transform: scale(1.4);
+    left: 17%;
+    position: absolute;
+    top: 69%;
+}
+
+.eventimg1 {
+  width: 1056px;
+  height: 628px;
+}
+
+.eventimg2 {
+  width: 1057px;
+  height: 628px;
+}
+
+.eventimg3 {
+  width: 1053px;
+  height: 628px; 
+}
+
+.flex__item2, .flex__item5, .flex__item8 {
+  margin: 20px 0px 0px 24px;
+  position: relative;
+  border: 2.5px solid black;
+  border-radius: 18px;
+  width: 672px;
+  height: 628px;
+}
+
+.inner__txt1 {
+  font-weight: 700;
+  font-size: 52px;
+}
+
+.inner__txt2 {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.button__txt {
+  margin: 10px 71px 10px 58px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 114%;
+  text-transform: lowercase;
+  color: #FFFFFF;
+}
+
+.button__txt > a {
+  text-decoration: none;
+  color: white;
+}
+
+.button {
+  left: 50%;
+  top: 80%;
+  width: 253.13px;
+  height: 67.97px;
+  background: #000000;
+  border-radius: 23px;
+}
+
+.formdecor {
+  transform: scale(1.3);
+  left: 10%;
+  top: 26%;
+  position: absolute;
+  z-index: -1;
+
+}
+
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1728px) {
+ .tconf {
+        transform: scale(1.2);
+        left: 10%;
+        position: absolute;
+    }
+
+    .runLine {
+        top: 40%;
+        position: relative;
+        align-items: center;
+        display: flex;
+        overflow: hidden;
+        width: 196vw;
+        height: 94px;
+    }
+
+    .lineTxt {
+        font-size: 85px;
+    }
+
+    .bconf {
+        transform: scale(1.2);
+        left: 12%;
+        position: absolute;
+        top: 69%;
+    }
+
+    .formdecor {
+      transform: scale(1.2);
+      left: 6%;
+      top: 20%;
+      position: absolute;
+      z-index: -1;
+  }
+
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1366px) {
+  .lineTxt {
+    font-size: 66px;
+}
+
+.runLine {
+    width: 184vw;
+}
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .tconf {
+    transform: scale(0.9);
+    left: -4%;
+    position: absolute;
+}
+
+.lineTxt {
+    font-size: 62px;
+}
+
+.bconf {
+    transform: scale(0.9);
+    left: -2%;
+    position: absolute;
+    top: 67%;
+}
+
+.eventimg1 {
+  width: 890px;
+  height: 530px;
+}
+
+.eventimg2 {
+  width: 890px;
+  height: 530px;
+}
+
+.eventimg3 {
+  width: 890px;
+  height: 530px;
+}
+
+
+.flex__item2, .flex__item5, .flex__item8 {
+  margin: 20px 0px 0px 24px;
+  position: relative;
+  width: 890px;
+  height: 332px;
+  border: 1.6px solid #000000;
+  border-radius: 12px;
+}
+
+.inner__txt1 {
+  font-weight: 700;
+  font-size: 34px;
+}
+
+.inner__txt2 {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 27px 104px 10px 20px;
+}
+
+.button__txt {
+  margin: 2px -44px -86px 64px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 114%;
+  text-transform: lowercase;
+  color: #FFFFFF;
+}
+
+.button__txt > a {
+  text-decoration: none;
+  color: white;
+}
+
+.button {
+  width: 260.55px;
+  height: 44px;
+  background: #000000;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  left: 65%;
+}
+
+.formdecor {
+  transform: scale(0.8);
+  left: -12%;
+  top: 14%;
+  position: absolute;
+  z-index: -1;
+}
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .tconf {
+    transform: scale(0.8);
+    left: -12%;
+    position: absolute;
+}
+
+.runLine {
+    top: 40%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    width: 226vw;
+    height: 74px;
+}
+
+.confRunLine {
+    height: 17vw;
+}
+
+.lineTxt {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Ramka';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 114%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    animation: runTxtLine 3s infinite linear;
+}
+
+.bconf {
+    transform: scale(0.8);
+    left: -13%;
+    position: absolute;
+    top: 64%;
+}
+
+.eventimg1 {
+  width: 692px;
+  height: 412px;
+}
+
+.eventimg2 {
+  width: 692px;
+  height: 412px;
+}
+
+.eventimg3 {
+  width: 692px;
+  height: 412px;
+}
+
+.flex__item2, .flex__item5, .flex__item8 {
+  margin: 20px 0px 0px 0px;
+  position: relative;
+  width: 692px;
+  height: 258px;
+  border: 1.6px solid #000000;
+  border-radius: 9px;
+}
+
+.inner__txt1 {
+  font-weight: 700;
+  font-size: 26.8px;
+}
+
+.inner__txt2 {
+  font-weight: 400;
+  font-size: 13px;
+  margin: 27px 104px 10px 20px;
+}
+
+.button__txt {
+  margin: 2px -44px -86px 64px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 114%;
+  text-transform: lowercase;
+  color: #FFFFFF;
+}
+
+.button__txt > a {
+  text-decoration: none;
+  color: white;
+}
+
+.button {
+  left: 65%;
+  width: 202px;
+  height: 34px;
+  background: #000000;
+  border: 1.7px solid #000000;
+  border-radius: 12px;
+}
+
+.formdecor {
+  transform: scale(0.7);
+  left: -27%;
+  top: 14%;
+  position: absolute;
+  z-index: -1;
+}
+
+.form__headline {
+  font-size: 28px;
+}
+
+input[type='button'] {
+  appearance: none;
+  background-color: black;
+  color: white;
+  height: 4vw;
+  width: 21vw;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 114.02%;
+  border-radius: 13px;
+}
+
+
+}
+
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+  .runLine {
+    top: 30%;
+    width: 221vw;
+}
+
+.confRunLine {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 22vw;
+}
+
+.tconf {
+    top: -11%;
+    transform: scale(0.8);
+    left: -17%;
+    position: absolute;
+}
+
+.lineTxt {
+    font-size: 44px;
+}
+
+.bconf {
+    transform: scale(0.8);
+    left: -23%;
+    position: absolute;
+    top: 55%;
+}
+
+.eventimg1 {
+  width: 637px;
+  height: 379px;
+}
+
+.eventimg2 {
+  width: 637px;
+  height: 378px;
+}
+
+.eventimg3 {
+  width: 639px;
+  height: 381px;
+}
+
+.flex__item2, .flex__item5, .flex__item8 {
+  margin: 20px 0px 0px 0px;
+  position: relative;
+  width: 637px;
+  height: 237px;
+  border: 1.4px solid #000000;
+  border-radius: 8px;
+}
+
+.inner__txt1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.inner__txt2 {
+  font-weight: 400;
+  font-size: 12px;
+  margin: 27px 150px 10px 20px;
+}
+
+
+.button__txt {
+  margin: 2px -44px -86px 55px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 114%;
+  text-transform: lowercase;
+  color: #FFFFFF;
+}
+
+.button__txt > a {
+  text-decoration: none;
+  color: white;
+}
+
+.button {
+  left: 65%;
+  width: 186px;
+  height: 31px;
+  
+  background: #000000;
+  border-radius: 11px;
+}
+
+.form__headline {
+  font-size: 24px;
+}
+
+input[type='text'], input[type='email'], input[type='tel'] {
+  height: 4vw;
+  width: 41vw;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 16px;
+  appearance: none;
+  padding: 0 12px;
+  margin: 14px;
+}
+
+input[type='button'] {
+  appearance: none;
+  background-color: black;
+  color: white;
+  height: 4vw;
+  width: 26vw;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 114.02%;
+  border-radius: 13px;
+}
+
+.formdecorMOB {
+  display: block;
+  transform: scale(1.7);
+  left: 20%;
+  top: 40%;
+  position: absolute;
+  z-index: -1;
+}
+
+.formdecor {
+  display: none;
+}
+
+
+
+}
+
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+  .formdecor {
+    display: none;
+  }
+
+  .formdecorMOB {
+    display: block;
+    transform: scale(0.2);
+    left: 20%;
+    top: 40%;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .confRunLine {
+    top: -10%;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 37vw;
+}
+
+.tconf {
+    top: -18%;
+    transform: scale(0.7);
+    left: -100%;
+    position: absolute;
+}
+
+.runLine {
+    top: 33%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    width: 371vw;
+    height: 40px;
+}
+
+.lineTxt {
+    font-size: 40px;
+}
+
+.bconf {
+    transform: scale(0.7);
+    left: -120%;
+    position: absolute;
+    top: 48%;
+}
+
+.eventimg1 {
+  width: 389px;
+  height: 231px;
+}
+
+.eventimg2 {
+  width: 389px;
+  height: 231px;
+}
+
+.eventimg3 {
+  width: 389px;
+  height: 231px;
+}
+
+.flex__item2, .flex__item5, .flex__item8 {
+  margin: 10px 0px 20px 0px;
+  position: relative;
+  width: 389px;
+  height: 236px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.inner__txt1 {
+  margin: 10px 0px 10px 20px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.inner__txt2 {
+  font-weight: 400;
+  font-size: 10px;
+  margin: 13px 110px 10px 20px;
+}
+
+input[type='button'] {
+  appearance: none;
+  background-color: black;
+  color: white;
+  height: 4vw;
+  width: 26vw;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 114.02%;
+  border-radius: 9px;
+}
+
+.button__txt {
+  margin: 1px -44px -23px 28px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  text-transform: lowercase;
+  color: #FFFFFF;
+}
+
+.button__txt > a {
+  text-decoration: none;
+  color: white;
+}
+
+.button {
+  width: 114px;
+  height: 19px;  
+  background: #000000;
+  border: 1.5px solid #000000;
+  border-radius: 7px;
+}
+
+.form__headline {
+  font-size: 19px;
+}
+
+input[type='text'], input[type='email'], input[type='tel'] {
+  height: 8vw;
+  width: 60vw;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 16px;
+  appearance: none;
+  padding: 0 12px;
+  margin: 10px;
+}
+
+input[type='button'] {
+  appearance: none;
+  background-color: black;
+  color: white;
+  height: 7vw;
+  width: 36vw;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 114.02%;
+  border-radius: 5px;
+}
+
+.formdecorMOB {
+  display: block;
+  transform: scale(1);
+  left: -6%;
+  top: 64%;
+  position: absolute;
+  z-index: -1;
+}
+
+.formdecor {
+  display: none;
+}
+
+.form__main {
+    position: relative;
+    height: 44vw;
+    margin: 20px;
+}
+
+.flex__container.form {
+    width: 86vw;
+}
+
+.form__headline:nth-child(2) {
+    margin-bottom: 13px;
+}
+
+
+}
+
+@media only screen and (max-width: 375px) {
+  .confRunLine {
+    top: -10%;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 37vw;
+}
+
+.tconf {
+    top: -18%;
+    transform: scale(0.6);
+    left: -100%;
+    position: absolute;
+}
+
+.runLine {
+    top: 33%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    width: 371vw;
+    height: 40px;
+}
+
+.lineTxt {
+    font-size: 35px;
+}
+
+.bconf {
+    transform: scale(0.6);
+    left: -130%;
+    position: absolute;
+    top: 45%;
+}
+
+.eventimg1 {
+  width: 389px;
+  height: 231px;
+}
+
+.eventimg2 {
+  width: 389px;
+  height: 231px;
+}
+
+.eventimg3 {
+  width: 389px;
+  height: 231px;
+}
+
+.flex__item2, .flex__item5, .flex__item8 {
+  margin: 10px 0px 20px 0px;
+  position: relative;
+  width: 389px;
+  height: 236px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.inner__txt1 {
+  margin: 10px 0px 10px 20px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.inner__txt2 {
+  font-weight: 400;
+  font-size: 10px;
+  margin: 13px 110px 10px 20px;
+}
+
+input[type='button'] {
+  appearance: none;
+  background-color: black;
+  color: white;
+  height: 4vw;
+  width: 26vw;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 114.02%;
+  border-radius: 9px;
+}
+
+.button__txt {
+  margin: 1px -44px -23px 28px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  text-transform: lowercase;
+  color: #FFFFFF;
+}
+
+.button__txt > a {
+  text-decoration: none;
+  color: white;
+}
+
+.button {
+  width: 114px;
+  height: 19px;  
+  background: #000000;
+  border: 1.5px solid #000000;
+  border-radius: 7px;
+}
+
+.form__headline {
+  font-size: 19px;
+}
+
+input[type='text'], input[type='email'], input[type='tel'] {
+  height: 8vw;
+  width: 60vw;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 16px;
+  appearance: none;
+  padding: 0 12px;
+  margin: 10px;
+}
+
+input[type='button'] {
+  appearance: none;
+  background-color: black;
+  color: white;
+  height: 7vw;
+  width: 36vw;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 114.02%;
+  border-radius: 5px;
+}
+
+.formdecorMOB {
+  display: block;
+  transform: scale(1);
+  left: -15%;
+  top: 64%;
+  position: absolute;
+  z-index: -1;
+}
+
+.formdecor {
+  display: none;
+}
+
+.form__main {
+    position: relative;
+    height: 44vw;
+    margin: 20px;
+}
+
+.flex__container.form {
+    width: 86vw;
+}
+
+.form__headline:nth-child(2) {
+    margin-bottom: 13px;
+}
+  
 }
