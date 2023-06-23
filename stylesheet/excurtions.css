@@ -364,6 +364,48 @@
 }
 
 @media only screen and (min-width: 376px) and (max-width: 414px) {
+  .confRunLine {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 19vw;
+  }
+
+  .confRunLine {
+    top: -10%;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 37vw;
+}
+
+.tconf {
+    top: -18%;
+    transform: scale(0.7);
+    left: -100%;
+    position: absolute;
+}
+
+.runLine {
+    top: 33%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    width: 371vw;
+    height: 40px;
+}
+
+.lineTxt {
+    font-size: 40px;
+}
+
+.bconf {
+    transform: scale(0.7);
+    left: -120%;
+    position: absolute;
+    top: 48%;
+}
 
 }
 
